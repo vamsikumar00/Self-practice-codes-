@@ -1,0 +1,6 @@
+- 👋 Hi, I’m @vamsikumar00
+- 👀 I’m interested in Python,AI&ML
+- 🌱 I’m currently learning Python Web Development,AL&ML
+- 💞️ I’m looking to collaborate on Python,AI&ML
+- 📫 How to reach me vamsiroyal123456@gmail.com / https://www.linkedin.com/in/vamsi-kumar-malisetty-2b34b2272
+- @twitter - vamsikumar00
