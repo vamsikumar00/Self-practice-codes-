@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Commerce app</title>
+    <script src="https://kit.fontawesome.com/43df530aea.js" crossorigin="anonymous"></script>
+    <style>
+      .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: aquamarine;
+      }
+      .card{
+        background-color: antiquewhite;
+        height: 400px;
+        padding: 20px;
+      }
+      section{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+      }
+      .select{
+        background-color: turquoise;
+        width: 70%;
+        height: 400px;
+        overflow: scroll;
+      }
+    </style>
+</head>   
+<body>
+    <div class="container">
+        <form onsubmit="logout(event)">
+         <span>Logout</span>
+        </form>
+    </div>
+    <div class="wrapper">
+        <h1>Online Shopping</h1>
+        <h3>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </h3>
+    </div>
+
+
+<section>
+    <div class="card">
+        <h2>HTML</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto harum provident sapiente magnam enim consectetur exercitationem ipsa porro? Quia, a?</p>
+        <h4>RS 1000</h4>
+        <button>Add-Cart</button>
+    </div>
+    <div class="card">
+        <h2>CSS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, sunt placeat consequatur officiis similique aliquid facilis nobis quo saepe vel.</p>
+        <h4>RS 800</h4>
+        <button>Add-Cart</button>
+    </div>
+    <div class="card">
+        <h2>React JS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi delectus, excepturi deleniti minima suscipit aliquam recusandae modi atque nobis?</p>
+        <h4>RS 900</h4>
+        <button>Add-Cart</button>
+    </div>
+    <div class="card">
+        <h2>Java script</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut modi enim quis incidunt fugiat voluptatum, adipisci ratione perferendis dignissimos molestiae!</p>
+        <h4>RS 700</h4>
+        <button>Add-Cart</button>
+    </div>
+    <div class="card">
+         <h2>Python</h2>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati mollitia expedita dolorum suscipit voluptatem recusandae accusamus architecto, ad impedit sunt.</p>
+         <h4>RS 1100</h4>
+         <button>Add-Cart</button>
+    </div>
+    <div class="card">
+        <h2>JAVA</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati mollitia expedita dolorum suscipit voluptatem recusandae accusamus architecto, ad impedit sunt.</p>
+        <h4>RS 1200</h4>
+        <button>Add-Cart</button>
+    </div>
+</section>
+<main class="select">
+
+</main> 
+<script>
+    const btn=document.getElementsByTagName("button")
+    const select=document.querySelector("select")
+    for(let b of btn){
+        b.addEventListener("click,(e)=>"{
+            let parent=e.target.parentNode
+            let clone=parent.cloneNode(true)
+            select.appendChild(clone)
+        })
+    }
+</script>   
+</body>
+</html>
